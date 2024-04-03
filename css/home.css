@@ -37,6 +37,9 @@ h2 {
 
 main {
     padding: 0 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .cabecalho {
@@ -71,6 +74,11 @@ main {
 .lista li img {
     width: 300px;
     height: 444px;
+    transition: .5s;
+}
+
+.lista li img:hover {
+    opacity: 0.6;
 }
 
 .pesquisa {
@@ -79,6 +87,11 @@ main {
 }
 
 @media screen and (max-width: 1600px) {
+    main {
+        padding: 0 3em;
+        display: block;
+    }
+    
     .lista {
         overflow: hidden;
         overflow-x: scroll;
